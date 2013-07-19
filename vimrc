@@ -93,6 +93,8 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+set wildignore+=*.pyc
+set wildignore+=*.lock
 
 " ================ Scrolling ========================
 
@@ -110,3 +112,6 @@ endif
 if $SHELL == '/bin/fish'
   set shell=/bin/sh
 endif
+
+" NERDTree ignore python compiled files
+let NERDTreeIgnore = ['\.pyc$']
