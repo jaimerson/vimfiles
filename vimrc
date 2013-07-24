@@ -115,3 +115,6 @@ endif
 
 " NERDTree ignore python compiled files
 let NERDTreeIgnore = ['\.pyc$']
+" ============== Filetypes ==========================
+" Add spell check and auto wrap for commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
