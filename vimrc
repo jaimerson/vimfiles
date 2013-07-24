@@ -109,9 +109,7 @@ if filereadable(expand("~/.vimrc.after"))
 endif
 
 " Fix a lot of issues with Fish shell
-if $SHELL == '/bin/fish'
-  set shell=/bin/sh
-endif
+set shell=/bin/sh
 
 " NERDTree ignore python compiled files
 let NERDTreeIgnore = ['\.pyc$']
